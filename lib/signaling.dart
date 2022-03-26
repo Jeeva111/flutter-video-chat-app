@@ -1,3 +1,4 @@
+import 'dart:io';
 import 'dart:convert';
 
 import 'package:cloud_firestore/cloud_firestore.dart';
@@ -185,8 +186,14 @@ class Signaling {
     RTCVideoRenderer localVideo,
     RTCVideoRenderer remoteVideo,
   ) async {
-    var stream = await navigator.mediaDevices
-        .getUserMedia({'video': true, 'audio': false});
+    MediaStream stream;
+    if (Platform.isAndroid) {
+      stream = await navigator.mediaDevices
+          .getDisplayMedia({'video': true, 'audio': false});
+    } else {
+      stream = await navigator.mediaDevices
+          .getUserMedia({'video': true, 'audio': false});
+    }
 
     localVideo.srcObject = stream;
     localStream = stream;
