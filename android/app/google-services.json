@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "927251421840",
+    "project_id": "flutter-webrtc-peer2peer",
+    "storage_bucket": "flutter-webrtc-peer2peer.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:927251421840:android:9862ae24c3bda5363d5615",
+        "android_client_info": {
+          "package_name": "com.brahmaesolutions.peer2peer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "927251421840-ievdmbnjs3fk8s4cvt0pi994iua9o2m0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBfjKQC1sjBBzGW3PC_Gu3JDIq5K4m22Is"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "927251421840-ievdmbnjs3fk8s4cvt0pi994iua9o2m0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
